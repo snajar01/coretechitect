@@ -52,31 +52,33 @@
   --font-sans: var(--font-figtree);
 }
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background: var(--bg);
-  color: var(--ink);
-  font-family: var(--font-sans), system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.55;
-  -webkit-font-smoothing: antialiased;
-}
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
 
-a {
-  color: var(--ink);
-  text-decoration: none;
-}
+  a {
+    color: var(--ink);
+    text-decoration: none;
+  }
 
-::selection {
-  background: rgba(140, 73, 26, 0.16);
-}
+  ::selection {
+    background: rgba(140, 73, 26, 0.16);
+  }
 
-:focus-visible {
-  outline: 2px solid var(--accent-deep);
-  outline-offset: 2px;
+  :focus-visible {
+    outline: 2px solid var(--accent-deep);
+    outline-offset: 2px;
+  }
 }
 
 section[id] {
