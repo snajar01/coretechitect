@@ -4,7 +4,7 @@ const CARDS = [
   {
     kicker: "01 — Platform",
     title: "Trusted, governed data platform",
-    body: "Cloud-native architecture on Snowflake, BigQuery, or Databricks, with a dbt transformation layer on top — modeled, governed, and defined once so every team reads the same numbers.",
+    body: "Cloud-native warehouse architecture with a transformation layer on top — modeled, governed, and defined once so every team reads the same numbers.",
     items: [
       "Governance, lineage, access control",
       "Ingestion, ELT, and dbt transformation",
