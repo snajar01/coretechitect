@@ -3,24 +3,23 @@ import { Reveal } from "./Reveal";
 const CARDS = [
   {
     kicker: "01 — Platform",
-    title: "Trusted, governed data warehouse",
-    body: "Cloud-native architecture on Snowflake, BigQuery, or Databricks — modeled, documented, and governed from day one, not bolted on after the fact.",
-    items: ["Governance, lineage, access control", "Ingestion and ELT pipelines", "Dimensional and semantic modeling"],
+    title: "Trusted, governed data platform",
+    body: "Cloud-native architecture on Snowflake, BigQuery, or Databricks, with a dbt transformation layer on top — modeled, governed, and defined once so every team reads the same numbers.",
+    items: [
+      "Governance, lineage, access control",
+      "Ingestion, ELT, and dbt transformation",
+      "Dimensional and semantic modeling",
+      "Executive and operational reporting",
+    ],
   },
   {
-    kicker: "02 — Analytics",
-    title: "Analytics engineering",
-    body: "Metrics defined once and used everywhere, so finance and operations stop reconciling whose number is correct.",
-    items: ["dbt transformation layer", "Executive and operational reporting", "Data quality testing and alerting"],
-  },
-  {
-    kicker: "03 — Science",
+    kicker: "02 — Science",
     title: "Data science & applied AI",
-    body: "Forecasting, segmentation, and production LLM workflows — grounded in the same governed warehouse, not a side pipeline nobody trusts.",
+    body: "Forecasting, segmentation, and production LLM workflows — grounded in the same governed platform, not a side pipeline nobody trusts.",
     items: ["Demand and revenue forecasting", "Churn and propensity modeling", "Production ML deployment"],
   },
   {
-    kicker: "04 — Advisory",
+    kicker: "03 — Advisory",
     title: "Fractional data leadership",
     body: "Senior judgment on retainer — roadmap, platform decisions, and hiring — without carrying a full-time executive.",
     items: ["Data strategy and roadmap", "Platform and vendor selection", "Team design and hiring"],
@@ -35,7 +34,7 @@ export function Capabilities() {
           What we are engaged to do
         </h2>
         <p className="max-w-[46ch] justify-self-start text-[15.5px] leading-[1.6] text-muted-2 md:justify-self-end">
-          Four practices, one engagement. Most clients begin with the warehouse and expand into the rest as the
+          Three practices, one engagement. Most clients begin with the platform and expand into the rest as the
           foundation proves out.
         </p>
       </Reveal>
