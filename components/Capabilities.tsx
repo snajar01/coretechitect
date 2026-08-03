@@ -3,9 +3,9 @@ import { Reveal } from "./Reveal";
 const CARDS = [
   {
     kicker: "01 — Platform",
-    title: "Modern data warehouse",
-    body: "Cloud-native architecture on Snowflake, BigQuery, or Databricks — modeled properly, documented, and tested from day one.",
-    items: ["Ingestion and ELT pipelines", "Dimensional and semantic modeling", "Governance, lineage, access control"],
+    title: "Trusted, governed data warehouse",
+    body: "Cloud-native architecture on Snowflake, BigQuery, or Databricks — modeled, documented, and governed from day one, not bolted on after the fact.",
+    items: ["Governance, lineage, access control", "Ingestion and ELT pipelines", "Dimensional and semantic modeling"],
   },
   {
     kicker: "02 — Analytics",
@@ -16,7 +16,7 @@ const CARDS = [
   {
     kicker: "03 — Science",
     title: "Data science & applied AI",
-    body: "Forecasting, segmentation, and LLM-backed workflows built on data your team can defend under scrutiny.",
+    body: "Forecasting, segmentation, and production LLM workflows — grounded in the same governed warehouse, not a side pipeline nobody trusts.",
     items: ["Demand and revenue forecasting", "Churn and propensity modeling", "Production ML deployment"],
   },
   {

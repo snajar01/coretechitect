@@ -4,7 +4,7 @@ import { Reveal } from "./Reveal";
 // results — confirm or replace with real figures before launch.
 const METRICS = [
   { value: "14×", caption: "faster reporting cycles after warehouse migration" },
-  { value: "1", caption: "source of truth across finance, operations, and product" },
+  { value: "1", caption: "source of truth your dashboards, reports, and AI tools all read from" },
   { value: "6 weeks", caption: "from kickoff to the first dashboard leadership trusts" },
   { value: "0", caption: "vendor lock-in — you own every line of the stack" },
 ];
