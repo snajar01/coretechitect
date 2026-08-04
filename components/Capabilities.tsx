@@ -15,8 +15,13 @@ const CARDS = [
   {
     kicker: "02 — Science",
     title: "Data science & applied AI",
-    body: "Forecasting, segmentation, and production LLM workflows — grounded in the same governed platform, not a side pipeline nobody trusts.",
-    items: ["Demand and revenue forecasting", "Churn and propensity modeling", "Production ML deployment"],
+    body: "Forecasting, segmentation, and agentic AI systems in production — grounded in the same governed platform, not a side pipeline nobody trusts.",
+    items: [
+      "Demand and revenue forecasting",
+      "Churn and propensity modeling",
+      "Agentic workflows and AI automation",
+      "Production ML deployment",
+    ],
   },
   {
     kicker: "03 — Advisory",
