@@ -1,5 +1,23 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Agentic HQ (`/boardroom`)
+
+CoreTechitect runs as an agentic business: every department (Finance, Sales,
+Delivery, Engineering, Marketing, People, and the CEO's office) is owned by an
+AI executive you can talk to.
+
+- **Voice in / voice out** — click the mic to speak (Web Speech API, works in
+  Chrome/Edge), and replies are read aloud in each executive's own voice.
+- **All-hands standup** — one click makes every exec report their numbers,
+  priorities, and risks in sequence, out loud.
+- **Powered by Claude** — set `ANTHROPIC_API_KEY` in your environment and the
+  executives answer free-form via the Anthropic API (`claude-opus-5`). Without
+  a key they fall back to a built-in simulation over the same business data,
+  so the demo always works.
+
+The org model, department KPIs, and persona voices live in `lib/company.ts`;
+the API route is `app/api/agent/route.ts`.
+
 ## Getting Started
 
 First, run the development server:

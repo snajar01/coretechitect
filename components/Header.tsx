@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { href: "#capabilities", label: "Capabilities" },
   { href: "#method", label: "Method" },
   { href: "#outcomes", label: "Outcomes" },
+  { href: "/boardroom", label: "Boardroom" },
 ];
 
 export function Header() {
