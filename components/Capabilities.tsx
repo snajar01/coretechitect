@@ -1,3 +1,4 @@
+import { AdvisoryIcon, PlatformIcon, ReliabilityIcon, ScienceIcon } from "./icons";
 import { Reveal } from "./Reveal";
 
 const CARDS = [
@@ -5,6 +6,7 @@ const CARDS = [
     kicker: "01 — Platform",
     title: "Trusted, governed data platform",
     body: "Cloud-native warehouse architecture with a transformation layer on top — modeled, governed, and defined once so every team reads the same numbers.",
+    icon: PlatformIcon,
     items: [
       "Governance, lineage, access control",
       "Ingestion, ELT, and dbt transformation",
@@ -16,6 +18,7 @@ const CARDS = [
     kicker: "02 — Science",
     title: "Data science & applied AI",
     body: "Forecasting, segmentation, and agentic AI systems in production — grounded in the same governed platform, not a side pipeline nobody trusts.",
+    icon: ScienceIcon,
     items: [
       "Demand and revenue forecasting",
       "Churn and propensity modeling",
@@ -24,9 +27,22 @@ const CARDS = [
     ],
   },
   {
-    kicker: "03 — Advisory",
+    kicker: "03 — Reliability",
+    title: "Data reconciliation & monitoring",
+    body: "Continuous reconciliation between source systems and the warehouse — plus monitoring that flags a broken pipeline or a drifted number before it reaches a board deck, not after.",
+    icon: ReliabilityIcon,
+    items: [
+      "Source-to-target reconciliation",
+      "Pipeline and data-quality monitoring",
+      "Anomaly and freshness alerting",
+      "Incident runbooks and on-call response",
+    ],
+  },
+  {
+    kicker: "04 — Advisory",
     title: "Fractional data leadership",
     body: "Senior judgment on retainer — roadmap, platform decisions, and hiring — without carrying a full-time executive.",
+    icon: AdvisoryIcon,
     items: ["Data strategy and roadmap", "Platform and vendor selection", "Team design and hiring"],
   },
 ];
@@ -39,15 +55,18 @@ export function Capabilities() {
           What we are engaged to do
         </h2>
         <p className="max-w-[46ch] justify-self-start text-[15.5px] leading-[1.6] text-muted-2 md:justify-self-end">
-          Three practices, one engagement. Most clients begin with the platform and expand into the rest as the
+          Four practices, one engagement. Most clients begin with the platform and expand into the rest as the
           foundation proves out.
         </p>
       </Reveal>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         {CARDS.map((card, i) => (
           <Reveal key={card.title} index={i} className="h-full">
             <article className="h-full rounded-lg border border-rule bg-surface px-[26px] pb-[30px] pt-7 transition-colors duration-150 hover:border-rule-hover">
-              <div className="text-xs font-bold uppercase tracking-[0.1em] text-accent-deep">{card.kicker}</div>
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-rule bg-surface-alt text-accent-deep">
+                <card.icon />
+              </div>
+              <div className="mt-4 text-xs font-bold uppercase tracking-[0.1em] text-accent-deep">{card.kicker}</div>
               <h3 className="mb-2.5 mt-3.5 text-xl font-semibold tracking-[-0.01em] text-navy">{card.title}</h3>
               <p className="mb-[18px] text-[14.5px] leading-[1.6] text-muted-2">{card.body}</p>
               <ul className="grid gap-2 text-sm text-list">
