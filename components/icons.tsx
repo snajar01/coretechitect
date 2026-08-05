@@ -18,9 +18,9 @@ const base = {
 export function PlatformIcon({ size = 22, className }: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" className={className} {...base}>
-      <path d="M12 3.5l8 4-8 4-8-4 8-4Z" />
-      <path d="M4 11.5l8 4 8-4" />
-      <path d="M4 15.5l8 4 8-4" />
+      <ellipse cx="12" cy="5" rx="7" ry="2.5" />
+      <path d="M5 5v5.5c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5V5" />
+      <path d="M5 10.5V16c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-5.5" />
     </svg>
   );
 }
