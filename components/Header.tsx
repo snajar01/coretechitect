@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 import { Logo } from "./Logo";
 
 const NAV_LINKS = [
@@ -7,8 +11,23 @@ const NAV_LINKS = [
 ];
 
 export function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 border-b border-rule bg-[rgba(251,250,249,0.92)] backdrop-blur-[10px]">
+    <header
+      className={`sticky top-0 z-50 border-b backdrop-blur-[10px] transition-all duration-300 ${
+        scrolled
+          ? "border-rule bg-[rgba(251,250,249,0.92)] shadow-[0_1px_0_rgba(20,41,63,0.05)]"
+          : "border-transparent bg-transparent"
+      }`}
+    >
       <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-6 px-[clamp(20px,4vw,48px)] py-4">
         <a href="#top" className="flex items-center gap-2.5 text-[17px] font-semibold tracking-[-0.01em] text-ink">
           <Logo />

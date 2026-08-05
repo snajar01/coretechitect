@@ -7,6 +7,7 @@ const CARDS = [
     title: "Trusted, governed data platform",
     body: "Cloud-native warehouse architecture with a transformation layer on top — modeled, governed, and defined once so every team reads the same numbers.",
     icon: PlatformIcon,
+    span: "wide",
     items: [
       "Governance, lineage, access control",
       "Ingestion, ELT, and dbt transformation",
@@ -19,6 +20,7 @@ const CARDS = [
     title: "Data science & applied AI",
     body: "Forecasting, segmentation, and agentic AI systems in production — grounded in the same governed platform, not a side pipeline nobody trusts.",
     icon: ScienceIcon,
+    span: "narrow",
     items: [
       "Demand and revenue forecasting",
       "Churn and propensity modeling",
@@ -31,6 +33,7 @@ const CARDS = [
     title: "Data reconciliation & monitoring",
     body: "Continuous reconciliation between source systems and the warehouse — plus monitoring that flags a broken pipeline or a drifted number before it reaches a board deck, not after.",
     icon: ReliabilityIcon,
+    span: "narrow",
     items: [
       "Source-to-target reconciliation",
       "Pipeline and data-quality monitoring",
@@ -43,9 +46,10 @@ const CARDS = [
     title: "Fractional data leadership",
     body: "Senior judgment on retainer — roadmap, platform decisions, and hiring — without carrying a full-time executive.",
     icon: AdvisoryIcon,
+    span: "wide",
     items: ["Data strategy and roadmap", "Platform and vendor selection", "Team design and hiring"],
   },
-];
+] as const;
 
 export function Capabilities() {
   return (
@@ -59,27 +63,50 @@ export function Capabilities() {
           foundation proves out.
         </p>
       </Reveal>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        {CARDS.map((card, i) => (
-          <Reveal key={card.title} index={i} className="h-full">
-            <article className="group h-full rounded-lg border border-rule bg-surface px-[26px] pb-[30px] pt-7 transition-all duration-200 hover:-translate-y-1 hover:border-rule-hover hover:shadow-[0_16px_32px_-20px_rgba(20,41,63,0.35)]">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-rule bg-surface-alt text-accent-deep transition-colors duration-200 group-hover:border-accent-deep group-hover:bg-accent-deep group-hover:text-white">
-                <card.icon />
-              </div>
-              <div className="mt-4 text-xs font-bold uppercase tracking-[0.1em] text-accent-deep">{card.kicker}</div>
-              <h3 className="mb-2.5 mt-3.5 text-xl font-semibold tracking-[-0.01em] text-navy">{card.title}</h3>
-              <p className="mb-[18px] text-[14.5px] leading-[1.6] text-muted-2">{card.body}</p>
-              <ul className="grid gap-2 text-sm text-list">
-                {card.items.map((item) => (
-                  <li key={item} className="flex gap-2.5">
-                    <span className="text-accent">—</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          </Reveal>
-        ))}
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-12">
+        {CARDS.map((card, i) => {
+          const wide = card.span === "wide";
+          return (
+            <Reveal
+              key={card.title}
+              index={i}
+              className={`h-full ${wide ? "lg:col-span-7" : "lg:col-span-5"}`}
+            >
+              <article className="group relative h-full overflow-hidden rounded-xl border border-rule bg-surface px-[26px] pb-[30px] pt-7 transition-all duration-200 hover:-translate-y-1 hover:border-rule-hover hover:shadow-[0_16px_32px_-20px_rgba(20,41,63,0.35)]">
+                <card.icon
+                  size={wide ? 136 : 108}
+                  className="pointer-events-none absolute -bottom-6 -right-6 -rotate-6 text-navy opacity-[0.05] transition-opacity duration-200 group-hover:opacity-[0.09]"
+                />
+                <div
+                  className={`relative flex items-center justify-center rounded-lg border border-rule bg-surface-alt text-accent-deep transition-colors duration-200 group-hover:border-accent-deep group-hover:bg-accent-deep group-hover:text-white ${
+                    wide ? "h-12 w-12" : "h-11 w-11"
+                  }`}
+                >
+                  <card.icon />
+                </div>
+                <div className="relative mt-4 text-xs font-bold uppercase tracking-[0.1em] text-accent-deep">
+                  {card.kicker}
+                </div>
+                <h3
+                  className={`relative mb-2.5 mt-3.5 font-semibold tracking-[-0.01em] text-navy ${
+                    wide ? "text-2xl" : "text-xl"
+                  }`}
+                >
+                  {card.title}
+                </h3>
+                <p className="relative mb-[18px] max-w-[46ch] text-[14.5px] leading-[1.6] text-muted-2">{card.body}</p>
+                <ul className="relative grid gap-2 text-sm text-list">
+                  {card.items.map((item) => (
+                    <li key={item} className="flex gap-2.5">
+                      <span className="text-accent">—</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            </Reveal>
+          );
+        })}
       </div>
     </section>
   );
