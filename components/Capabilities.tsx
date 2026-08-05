@@ -62,8 +62,8 @@ export function Capabilities() {
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         {CARDS.map((card, i) => (
           <Reveal key={card.title} index={i} className="h-full">
-            <article className="h-full rounded-lg border border-rule bg-surface px-[26px] pb-[30px] pt-7 transition-colors duration-150 hover:border-rule-hover">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-rule bg-surface-alt text-accent-deep">
+            <article className="group h-full rounded-lg border border-rule bg-surface px-[26px] pb-[30px] pt-7 transition-all duration-200 hover:-translate-y-1 hover:border-rule-hover hover:shadow-[0_16px_32px_-20px_rgba(20,41,63,0.35)]">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-rule bg-surface-alt text-accent-deep transition-colors duration-200 group-hover:border-accent-deep group-hover:bg-accent-deep group-hover:text-white">
                 <card.icon />
               </div>
               <div className="mt-4 text-xs font-bold uppercase tracking-[0.1em] text-accent-deep">{card.kicker}</div>

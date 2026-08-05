@@ -1,3 +1,4 @@
+import { CountUp } from "./CountUp";
 import { Reveal } from "./Reveal";
 
 // Illustrative placeholders supplied by the design, not audited client
@@ -20,7 +21,9 @@ export function MetricStrip() {
               i === 0 ? "pr-6" : i === METRICS.length - 1 ? "pl-6" : "px-6"
             }`}
           >
-            <div className="font-serif text-[38px] leading-none text-navy">{metric.value}</div>
+            <div className="font-serif text-[38px] leading-none text-navy">
+              <CountUp value={metric.value} />
+            </div>
             <div className="mt-2 text-sm leading-[1.5] text-muted-2">{metric.caption}</div>
           </div>
         ))}
