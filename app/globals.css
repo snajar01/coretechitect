@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #fbfaf9;
-  --surface: #ffffff;
-  --surface-alt: #f4f2ee;
-  --ink: #14181d;
-  --navy: #14293f;
-  --navy-hover: #0e1f30;
-  --navy-deep: #0f2135;
-  --navy-line: #33506e;
-  --muted: #4c5560;
-  --muted-2: #5a6470;
-  --muted-3: #6c757f;
-  --list: #3d4650;
-  --rule: #e6e2db;
-  --rule-soft: #efece6;
-  --rule-strong: #d5d0c7;
-  --rule-hover: #c7c1b6;
-  --accent: #c0692f;
-  --accent-hover: #a85824;
-  --accent-deep: #8c491a;
-  --on-dark-body: #b9c2cc;
-  --on-dark-hint: #8fa0b2;
-  --cta-fg: #f3f1ed;
+  --bg: #0a0e14;
+  --surface: #151d2a;
+  --surface-alt: #1a2437;
+  --ink: #e8eef7;
+  --navy: #2a5aff;
+  --navy-hover: #1e42cc;
+  --navy-deep: #152b99;
+  --navy-line: #2a5aff;
+  --muted: #a8b5c8;
+  --muted-2: #8b98ac;
+  --muted-3: #6d7a8f;
+  --list: #c8d2e0;
+  --rule: #2a3a4f;
+  --rule-soft: #1f2d3f;
+  --rule-strong: #3d4f67;
+  --rule-hover: #4a5f7a;
+  --accent: #ff7f3f;
+  --accent-hover: #ff6b1f;
+  --accent-deep: #e85a00;
+  --on-dark-body: #c8d2e0;
+  --on-dark-hint: #8b98ac;
+  --cta-fg: #e8eef7;
 }
 
 @theme inline {
@@ -178,17 +178,17 @@ section[id] {
 /* Ambient background glows and depth layers */
 .hero-glow {
   background-image:
-    radial-gradient(640px circle at 88% 12%, rgba(192, 105, 47, 0.12), transparent 55%),
-    radial-gradient(520px circle at 6% 88%, rgba(20, 41, 63, 0.08), transparent 65%),
-    radial-gradient(800px circle at 50% 50%, rgba(192, 105, 47, 0.04), transparent 80%);
+    radial-gradient(640px circle at 88% 12%, rgba(255, 127, 63, 0.25), transparent 50%),
+    radial-gradient(520px circle at 6% 88%, rgba(42, 90, 255, 0.15), transparent 55%),
+    radial-gradient(900px circle at 50% 50%, rgba(255, 127, 63, 0.08), transparent 75%);
   background-attachment: fixed;
 }
 
 .cta-glow {
   background-image:
-    radial-gradient(720px circle at 88% -8%, rgba(192, 105, 47, 0.2), transparent 50%),
-    radial-gradient(600px circle at -6% 112%, rgba(255, 255, 255, 0.08), transparent 60%),
-    radial-gradient(900px circle at 50% 50%, rgba(192, 105, 47, 0.05), transparent 85%);
+    radial-gradient(720px circle at 88% -8%, rgba(255, 127, 63, 0.3), transparent 45%),
+    radial-gradient(600px circle at -6% 112%, rgba(42, 90, 255, 0.2), transparent 55%),
+    radial-gradient(900px circle at 50% 50%, rgba(255, 127, 63, 0.1), transparent 80%);
   background-attachment: fixed;
 }
 
@@ -204,13 +204,13 @@ section[id] {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
 }
 
 .accent-shape-1 {
   width: 320px;
   height: 320px;
-  background: radial-gradient(circle, rgba(192, 105, 47, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 127, 63, 0.2) 0%, transparent 70%);
   top: -160px;
   right: -160px;
   animation: float-slow 12s ease-in-out infinite;
@@ -219,7 +219,7 @@ section[id] {
 .accent-shape-2 {
   width: 280px;
   height: 280px;
-  background: radial-gradient(circle, rgba(20, 41, 63, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(42, 90, 255, 0.15) 0%, transparent 70%);
   bottom: -140px;
   left: -140px;
   animation: float-medium 14s ease-in-out infinite reverse;
@@ -228,7 +228,7 @@ section[id] {
 .accent-shape-3 {
   width: 240px;
   height: 240px;
-  background: radial-gradient(circle, rgba(192, 105, 47, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 127, 63, 0.15) 0%, transparent 70%);
   top: 50%;
   right: 10%;
   animation: float-slow 16s ease-in-out infinite;
