@@ -4,6 +4,8 @@ import { Reveal } from "./Reveal";
 export function Hero() {
   return (
     <section id="top" className="hero-glow relative overflow-hidden">
+      <div className="accent-shape accent-shape-1" />
+      <div className="accent-shape accent-shape-2" />
       <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] pb-[clamp(40px,5vw,72px)] pt-[clamp(56px,8vw,104px)]">
         <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,620px)_1fr]">
           <div className="grid max-w-[620px] gap-7">

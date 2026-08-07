@@ -11,7 +11,9 @@ const STATS = [
 
 export function Outcomes() {
   return (
-    <section id="outcomes" className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(48px,6vw,84px)]">
+    <section id="outcomes" className="relative overflow-hidden">
+      <div className="accent-shape accent-shape-3" style={{ opacity: 0.35 }} />
+      <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(48px,6vw,84px)] relative z-10">
       <Reveal className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-center gap-[clamp(28px,4vw,64px)]">
         <div>
           <div className="mb-5 text-[12.5px] font-bold uppercase tracking-[0.11em] text-accent-deep">
@@ -37,6 +39,7 @@ export function Outcomes() {
           ))}
         </div>
       </Reveal>
+      </div>
     </section>
   );
 }

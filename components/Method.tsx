@@ -24,8 +24,9 @@ const PHASES = [
 
 export function Method() {
   return (
-    <section id="method" className="border-y border-rule bg-surface-alt">
-      <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(48px,6vw,84px)]">
+    <section id="method" className="border-y border-rule bg-surface-alt relative overflow-hidden">
+      <div className="accent-shape accent-shape-2" style={{ opacity: 0.4 }} />
+      <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(48px,6vw,84px)] relative z-10">
         <Reveal className="mb-4 text-[12.5px] font-bold uppercase tracking-[0.11em] text-accent-deep">
           Engagement method
         </Reveal>
