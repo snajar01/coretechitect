@@ -4,7 +4,8 @@ import { Reveal } from "./Reveal";
 export function CtaSection() {
   return (
     <section id="contact" className="cta-glow relative overflow-hidden bg-navy text-cta-fg">
-      <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(52px,7vw,96px)]">
+      <div className="accent-shape accent-shape-1" style={{ opacity: 0.5 }} />
+      <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(52px,7vw,96px)] relative z-10">
         <Reveal className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-end gap-[clamp(28px,4vw,64px)]">
           <div>
             <h2 className="mb-4 max-w-[14ch] font-serif text-[clamp(30px,4.4vw,56px)] font-normal leading-[1.05] tracking-[-0.02em] text-white">

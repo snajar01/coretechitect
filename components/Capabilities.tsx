@@ -53,7 +53,9 @@ const CARDS = [
 
 export function Capabilities() {
   return (
-    <section id="capabilities" className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(48px,6vw,80px)]">
+    <section id="capabilities" className="relative overflow-hidden">
+      <div className="accent-shape accent-shape-3" />
+      <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(48px,6vw,80px)]">
       <Reveal className="mb-[clamp(32px,4vw,48px)] grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-end gap-6">
         <h2 className="max-w-[16ch] font-serif text-[clamp(28px,3.6vw,46px)] font-normal leading-[1.1] tracking-[-0.02em] text-navy">
           What we are engaged to do
@@ -107,6 +109,7 @@ export function Capabilities() {
             </Reveal>
           );
         })}
+      </div>
       </div>
     </section>
   );
