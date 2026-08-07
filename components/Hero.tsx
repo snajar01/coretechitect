@@ -18,7 +18,7 @@ export function Hero() {
             </Reveal>
             <Reveal index={1}>
               <h1 className="max-w-[17ch] text-balance font-serif text-[clamp(38px,5.6vw,74px)] font-normal leading-[1.06] tracking-[-0.02em] text-navy">
-                The data foundation the rest of the company stands on.
+                One platform. Every number your company trusts.
               </h1>
             </Reveal>
             <Reveal index={2}>
