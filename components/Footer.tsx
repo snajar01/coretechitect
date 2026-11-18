@@ -67,9 +67,20 @@ export function Footer() {
         </div>
         <div className="flex flex-wrap items-center justify-between gap-3.5 border-t border-rule-soft pt-6 text-[13px] text-muted-3">
           <span>© 2026 CoreTechitect LLC · Data architecture &amp; analytics</span>
-          <a href="#top" className="transition-colors duration-150 hover:text-accent-deep">
-            Back to top ↑
-          </a>
+          <div className="flex flex-wrap items-center gap-5">
+            <a href="/privacy" className="transition-colors duration-150 hover:text-accent-deep">
+              Privacy
+            </a>
+            <a href="/terms" className="transition-colors duration-150 hover:text-accent-deep">
+              Terms
+            </a>
+            <a href="/sms" className="transition-colors duration-150 hover:text-accent-deep">
+              Text alerts
+            </a>
+            <a href="#top" className="transition-colors duration-150 hover:text-accent-deep">
+              Back to top ↑
+            </a>
+          </div>
         </div>
       </div>
     </footer>
