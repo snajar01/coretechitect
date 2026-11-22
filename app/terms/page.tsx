@@ -21,8 +21,9 @@ export default function TermsPage() {
         and task reminders, sent to numbers whose owner has opted in.
       </p>
       <p>
-        <strong>Opt in:</strong> You opt in by entering your mobile number and checking the consent box on the{" "}
-        <a href="/sms">text alerts page</a>. Consent is not a condition of purchase.
+        <strong>Opt in:</strong> You opt in by entering your mobile number and checking the consent box on the CoreTechitect
+        text alerts page. This program is limited to the business owner, and only the owner's number can be enrolled.
+        Consent is not a condition of purchase.
       </p>
       <p>
         <strong>Frequency and cost:</strong> Message frequency varies. Message and data rates may apply.

@@ -51,9 +51,6 @@ export function LegalPage({
             <a href="/terms" className={linkClass}>
               Terms
             </a>
-            <a href="/sms" className={linkClass}>
-              Text alerts
-            </a>
           </div>
         </div>
       </footer>
