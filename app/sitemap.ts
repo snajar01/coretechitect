@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
-    ...["privacy", "terms", "sms"].map((path) => ({
+    ...["privacy", "terms"].map((path) => ({
       url: `https://coretechitect.com/${path}`,
       lastModified: new Date(),
       changeFrequency: "yearly" as const,

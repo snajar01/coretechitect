@@ -74,9 +74,6 @@ export function Footer() {
             <a href="/terms" className="transition-colors duration-150 hover:text-accent-deep">
               Terms
             </a>
-            <a href="/sms" className="transition-colors duration-150 hover:text-accent-deep">
-              Text alerts
-            </a>
             <a href="#top" className="transition-colors duration-150 hover:text-accent-deep">
               Back to top ↑
             </a>
