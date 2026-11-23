@@ -71,7 +71,7 @@ export function SmsOptInForm() {
           className="mt-1.5 h-[18px] w-[18px] flex-none accent-navy"
         />
         <label htmlFor="consent" className="text-[13.5px] leading-[1.6] text-list">
-          By checking this box, you agree to receive recurring automated account notifications from CoreTechitect at
+          By checking this box, you agree to receive recurring automated account notifications from Core Techitect at
           the number provided. Consent is not a condition of purchase. Msg frequency varies. Msg &amp; data rates may
           apply. Reply HELP for help, STOP to cancel.{" "}
           <a href="/privacy" className="text-[#7d9bff] underline">

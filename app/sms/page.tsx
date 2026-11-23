@@ -4,8 +4,8 @@ import { LegalPage } from "@/components/LegalPage";
 import { SmsOptInForm } from "@/components/SmsOptInForm";
 
 export const metadata: Metadata = {
-  title: "Text alerts | CoreTechitect",
-  description: "How CoreTechitect sends account notifications by text message, and how to opt in or out.",
+  title: "Text alerts | Core Techitect",
+  description: "How Core Techitect sends account notifications by text message, and how to opt in or out.",
   robots: { index: false, follow: false },
 };
 
@@ -13,8 +13,8 @@ export default function SmsPage() {
   return (
     <LegalPage
       eyebrow="Text alerts"
-      title="CoreTechitect account notifications by text"
-      lede="CoreTechitect, LLC sends automated account notifications, such as system alerts and task reminders, by text message to the business owner. This program is not used for marketing."
+      title="Core Techitect account notifications by text"
+      lede="Core Techitect, LLC sends automated account notifications, such as system alerts and task reminders, by text message to the business owner. This program is not used for marketing."
     >
       <SmsOptInForm />
       <h2>How it works</h2>

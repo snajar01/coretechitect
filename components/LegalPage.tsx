@@ -42,7 +42,7 @@ export function LegalPage({
       </main>
       <footer className="border-t border-rule bg-surface-alt">
         <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-x-7 gap-y-4 px-[clamp(20px,4vw,48px)] py-7 text-[13px] text-muted-3">
-          <span>© 2026 CoreTechitect LLC</span>
+          <span>© 2026 Core Techitect LLC</span>
           <div className="flex gap-5">
             <a href="/privacy" className={linkClass}>
               Privacy

@@ -4,7 +4,7 @@ import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Core Techitect",
-  description: "Terms of service for coretechitect.com and CoreTechitect text message notifications.",
+  description: "Terms of service for coretechitect.com and Core Techitect text message notifications.",
   alternates: { canonical: "/terms" },
 };
 
@@ -12,14 +12,14 @@ export default function TermsPage() {
   return (
     <LegalPage eyebrow="Legal" title="Terms of Service" lede="Last updated November 23, 2026">
       <p>
-        These terms apply to your use of coretechitect.com (the “Site”), operated by CoreTechitect, LLC
-        (“CoreTechitect,” “we,” “us”). By using the Site you agree to them. If you do not agree, please do not use the
+        These terms apply to your use of coretechitect.com (the “Site”), operated by Core Techitect, LLC
+        (“Core Techitect,” “we,” “us”). By using the Site you agree to them. If you do not agree, please do not use the
         Site.
       </p>
 
       <h2>Using this site</h2>
       <p>
-        This site describes the services of CoreTechitect, LLC and lets you contact us. It is not an offer to provide
+        This site describes the services of Core Techitect, LLC and lets you contact us. It is not an offer to provide
         services on any particular terms. Content is provided as is, without warranties of any kind.
       </p>
 
@@ -64,7 +64,7 @@ export default function TermsPage() {
 
       <h2>Intellectual property</h2>
       <p>
-        The Site, including its text, design, graphics, and the Core Techitect name and logo, is owned by CoreTechitect
+        The Site, including its text, design, graphics, and the Core Techitect name and logo, is owned by Core Techitect
         or its licensors and protected by intellectual property laws. You may view and share links to the Site for
         personal or internal business evaluation. You may not copy, modify, distribute, or create derivative works from
         it, or use our name or logo, without our written permission.
@@ -85,7 +85,7 @@ export default function TermsPage() {
 
       <h2>Limitation of liability</h2>
       <p>
-        To the fullest extent permitted by law, CoreTechitect and its members, employees, and contractors are not liable
+        To the fullest extent permitted by law, Core Techitect and its members, employees, and contractors are not liable
         for any indirect, incidental, special, consequential, or punitive damages, or for lost profits, revenue, or
         data, arising from your use of or inability to use the Site. Our total liability for any claim relating to the
         Site is limited to one hundred U.S. dollars ($100). Nothing in these terms limits liability that cannot be
@@ -94,12 +94,12 @@ export default function TermsPage() {
 
       <h2>Text message terms</h2>
       <p>
-        <strong>Program:</strong> CoreTechitect account notifications. Recurring automated texts, such as system alerts
+        <strong>Program:</strong> Core Techitect account notifications. Recurring automated texts, such as system alerts
         and task reminders, sent to numbers whose owner has opted in.
       </p>
       <p>
         <strong>Opt in:</strong> You opt in by entering your mobile number and checking the consent box on the
-        CoreTechitect text alerts page. This program is limited to the business owner, and only the owner&apos;s number
+        Core Techitect text alerts page. This program is limited to the business owner, and only the owner&apos;s number
         can be enrolled. Consent is not a condition of purchase.
       </p>
       <p>

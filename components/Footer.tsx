@@ -65,7 +65,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-between gap-3.5 border-t border-rule-soft pt-6 text-[13px] text-muted-3">
-          <span>© 2026 CoreTechitect LLC · Data architecture &amp; analytics</span>
+          <span>© 2026 Core Techitect LLC · Data architecture &amp; analytics</span>
           <div className="flex flex-wrap items-center gap-5">
             <a href="/privacy" className="transition-colors duration-150 hover:text-accent-deep">
               Privacy

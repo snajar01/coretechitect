@@ -4,7 +4,7 @@ import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Core Techitect",
-  description: "How CoreTechitect, LLC collects, uses and protects your information.",
+  description: "How Core Techitect, LLC collects, uses and protects your information.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -12,7 +12,7 @@ export default function PrivacyPage() {
   return (
     <LegalPage eyebrow="Legal" title="Privacy Policy" lede="Last updated November 23, 2026">
       <p>
-        CoreTechitect, LLC (“CoreTechitect,” “we,” “us”) runs coretechitect.com to describe our data architecture,
+        Core Techitect, LLC (“Core Techitect,” “we,” “us”) runs coretechitect.com to describe our data architecture,
         analytics, and applied AI consulting and to hear from prospective clients. This policy explains what
         information the site collects and what we do with it.
       </p>
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
       </p>
       <p>
         We may also disclose information when required by law, to enforce our agreements, or to protect the rights and
-        safety of CoreTechitect, our clients, or others, and in connection with a merger, financing, or sale of the
+        safety of Core Techitect, our clients, or others, and in connection with a merger, financing, or sale of the
         business.
       </p>
 
@@ -106,7 +106,7 @@ export default function PrivacyPage() {
 
       <h2>International visitors</h2>
       <p>
-        CoreTechitect is based in the United States, and information you submit may be processed there and in other
+        Core Techitect is based in the United States, and information you submit may be processed there and in other
         countries where our service providers operate.
       </p>
 
@@ -118,7 +118,7 @@ export default function PrivacyPage() {
 
       <h2>Contact</h2>
       <p>
-        CoreTechitect, LLC, 10612 Providence Road, Charlotte, NC 28277. Questions or requests about this policy:{" "}
+        Core Techitect, LLC, 10612 Providence Road, Charlotte, NC 28277. Questions or requests about this policy:{" "}
         <a href="mailto:contact@coretechitect.com">contact@coretechitect.com</a> or{" "}
         <a href="mailto:support@coretechitect.com">support@coretechitect.com</a>.
       </p>
