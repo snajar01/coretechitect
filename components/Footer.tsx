@@ -18,9 +18,8 @@ export function Footer() {
       <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] pb-10 pt-[clamp(40px,5vw,64px)]">
         <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-x-8 gap-y-10 pb-10">
           <div className="max-w-[280px]">
-            <a href="#top" className="flex items-center gap-2.5 text-[16px] font-semibold tracking-[-0.01em] text-ink">
-              <Logo />
-              CoreTechitect
+            <a href="#top" aria-label="Core Techitect, back to top" className="inline-block">
+              <Logo variant="lockup" height={56} />
             </a>
             <p className="mt-3.5 text-[13.5px] leading-[1.6] text-muted-2">
               Data architecture, analytics, and applied AI for organizations that need to trust their own numbers.

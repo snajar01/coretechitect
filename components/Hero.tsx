@@ -23,7 +23,7 @@ export function Hero() {
             </Reveal>
             <Reveal index={2}>
               <p className="max-w-[60ch] text-[clamp(16.5px,1.3vw,19px)] leading-[1.6] text-muted">
-                CoreTechitect designs and builds modern data warehouses for organizations that have outgrown
+                Core Techitect designs and builds modern data warehouses for organizations that have outgrown
                 spreadsheets, dashboards no one trusts, and pipelines held together by one person&apos;s memory.
                 Architecture first — then analytics and AI that hold up under scrutiny, not just in a demo.
               </p>

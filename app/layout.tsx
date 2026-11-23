@@ -14,9 +14,9 @@ const figtree = Figtree({
   weight: ["400", "500", "600", "700"],
 });
 
-const title = "CoreTechitect — Data architecture & analytics";
+const title = "Core Techitect — Data architecture & analytics";
 const description =
-  "CoreTechitect designs and builds modern data warehouses for organizations that have outgrown spreadsheets, dashboards no one trusts, and pipelines held together by one person's memory. Architecture first — then analytics that hold up in a board meeting.";
+  "Core Techitect designs and builds modern data warehouses for organizations that have outgrown spreadsheets, dashboards no one trusts, and pipelines held together by one person's memory. Architecture first — then analytics that hold up in a board meeting.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://coretechitect.com"),
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: "https://coretechitect.com",
-    siteName: "CoreTechitect",
+    siteName: "Core Techitect",
     type: "website",
   },
   twitter: {

@@ -24,14 +24,13 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 border-b backdrop-blur-[10px] transition-all duration-300 ${
         scrolled
-          ? "border-rule bg-[rgba(251,250,249,0.92)] shadow-[0_1px_0_rgba(20,41,63,0.05)]"
+          ? "border-rule-strong bg-[rgba(10,14,20,0.88)] shadow-[0_1px_0_rgba(0,0,0,0.25)]"
           : "border-transparent bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-6 px-[clamp(20px,4vw,48px)] py-4">
-        <a href="#top" className="flex items-center gap-2.5 text-[17px] font-semibold tracking-[-0.01em] text-ink">
-          <Logo />
-          CoreTechitect
+        <a href="#top" aria-label="Core Techitect, back to top">
+          <Logo height={38} />
         </a>
         <nav className="flex items-center gap-4 text-[14.5px]">
           <div className="hidden items-center gap-[clamp(16px,2.4vw,32px)] min-[720px]:flex">

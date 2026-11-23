@@ -20,9 +20,8 @@ export function LegalPage({
     <>
       <header className="border-b border-rule">
         <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-6 px-[clamp(20px,4vw,48px)] py-4">
-          <Link href="/" className="flex items-center gap-2.5 text-[17px] font-semibold tracking-[-0.01em] text-ink">
-            <Logo />
-            CoreTechitect
+          <Link href="/" aria-label="Core Techitect, home">
+            <Logo height={38} />
           </Link>
           <Link href="/" className={linkClass}>
             Back to home
