@@ -5,13 +5,13 @@ const PHASES = [
   {
     label: "Phase 01 · Weeks 1–2",
     title: "Audit",
-    body: "We map every source, every recurring report, and every place a number is manually adjusted. You receive a written assessment whether or not the engagement continues.",
+    body: "We map your systems, your data, and every place work is done by hand. You receive a written assessment whether or not the engagement continues.",
     icon: AuditIcon,
   },
   {
     label: "Phase 02 · Weeks 3–8",
     title: "Build",
-    body: "Warehouse, pipelines, and the modeling layer — delivered in two-week increments against the metrics leadership already asks for.",
+    body: "Data, software, and integrations, delivered in two-week increments against the outcomes leadership already asks for.",
     icon: BuildIcon,
   },
   {
@@ -32,7 +32,7 @@ export function Method() {
         </Reveal>
         <Reveal index={1}>
           <h2 className="mb-[clamp(32px,4vw,52px)] max-w-[22ch] font-serif text-[clamp(26px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-ink">
-            Architecture before dashboards. Always.
+            Architecture first. Always.
           </h2>
         </Reveal>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-[clamp(24px,3vw,40px)]">

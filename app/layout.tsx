@@ -14,9 +14,9 @@ const figtree = Figtree({
   weight: ["400", "500", "600", "700"],
 });
 
-const title = "Core Techitect — Data architecture & analytics";
+const title = "Core Techitect — Data, AI & software";
 const description =
-  "Core Techitect designs and builds modern data warehouses for organizations that have outgrown spreadsheets, dashboards no one trusts, and pipelines held together by one person's memory. Architecture first — then analytics that hold up in a board meeting.";
+  "Core Techitect designs and builds data foundations and migrations, AI and automation, custom software, websites, and cloud systems for growing businesses. Architecture first.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://coretechitect.com"),

@@ -1,102 +1,83 @@
-import { AdvisoryIcon, PlatformIcon, ReliabilityIcon, ScienceIcon } from "./icons";
+import { AdvisoryIcon, CodeIcon, PlatformIcon, ScienceIcon } from "./icons";
 import { Reveal } from "./Reveal";
 
 const CARDS = [
   {
-    kicker: "01 — Platform",
-    title: "Trusted, governed data platform",
-    body: "Cloud-native warehouse architecture with a transformation layer on top — modeled, governed, and defined once so every team reads the same numbers.",
+    kicker: "01 — Data",
+    title: "Data foundation & migration",
+    body: "Move off legacy systems onto a modern, governed data platform that every team can trust, and keep it reconciled and monitored.",
     icon: PlatformIcon,
-    span: "wide",
     items: [
+      "Legacy-to-modern migration",
+      "Warehouse, pipelines, and modeling",
       "Governance, lineage, access control",
-      "Ingestion, ELT, and dbt transformation",
-      "Dimensional and semantic modeling",
+      "Reconciliation and data-quality monitoring",
+    ],
+  },
+  {
+    kicker: "02 — AI",
+    title: "AI, analytics & automation",
+    body: "Put your data to work: AI agents and automated workflows in production, with forecasting and reporting grounded in the same foundation.",
+    icon: ScienceIcon,
+    items: [
+      "AI agents and LLM-powered features",
+      "Workflow and process automation",
+      "Forecasting and predictive models",
       "Executive and operational reporting",
     ],
   },
   {
-    kicker: "02 — Science",
-    title: "Data science & applied AI",
-    body: "Forecasting, segmentation, and agentic AI systems in production — grounded in the same governed platform, not a side pipeline nobody trusts.",
-    icon: ScienceIcon,
-    span: "narrow",
+    kicker: "03 — Software",
+    title: "Systems, web & cloud",
+    body: "Design and build the software your business runs on, from system architecture and websites to the cloud and integrations underneath.",
+    icon: CodeIcon,
     items: [
-      "Demand and revenue forecasting",
-      "Churn and propensity modeling",
-      "Agentic workflows and AI automation",
-      "Production ML deployment",
+      "System design and custom software",
+      "Web design and development",
+      "Cloud setup and migration",
+      "Integrations and DevOps",
     ],
-  },
-  {
-    kicker: "03 — Reliability",
-    title: "Data reconciliation & monitoring",
-    body: "Continuous reconciliation between source systems and the warehouse — plus monitoring that flags a broken pipeline or a drifted number before it reaches a board deck, not after.",
-    icon: ReliabilityIcon,
-    span: "narrow",
-    items: [
-      "Source-to-target reconciliation",
-      "Pipeline and data-quality monitoring",
-      "Anomaly and freshness alerting",
-      "Incident runbooks and on-call response",
-    ],
-  },
-  {
-    kicker: "04 — Advisory",
-    title: "Fractional data leadership",
-    body: "Senior judgment on retainer — roadmap, platform decisions, and hiring — without carrying a full-time executive.",
-    icon: AdvisoryIcon,
-    span: "wide",
-    items: ["Data strategy and roadmap", "Platform and vendor selection", "Team design and hiring"],
   },
 ] as const;
+
+const ADVISORY_ITEMS = ["Technology strategy and roadmap", "Platform and vendor selection", "Team design and hiring"];
+
+const iconTileClass =
+  "relative flex h-12 w-12 items-center justify-center rounded-lg border border-rule bg-surface-alt text-accent-deep transition-colors duration-200 group-hover:border-accent-deep group-hover:bg-accent-deep group-hover:text-bg";
+const cardClass =
+  "group relative h-full overflow-hidden rounded-xl border border-rule bg-surface px-[26px] pb-[30px] pt-7 transition-all duration-200 hover:-translate-y-1 hover:border-rule-hover hover:shadow-[0_16px_32px_-20px_rgba(0,0,0,0.5)]";
+const kickerClass = "text-xs font-bold uppercase tracking-[0.1em] text-accent-deep";
 
 export function Capabilities() {
   return (
     <section id="capabilities" className="relative overflow-hidden">
       <div className="accent-shape accent-shape-3" />
       <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(48px,6vw,80px)]">
-      <Reveal className="mb-[clamp(32px,4vw,48px)] grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-end gap-6">
-        <h2 className="max-w-[16ch] font-serif text-[clamp(28px,3.6vw,46px)] font-normal leading-[1.1] tracking-[-0.02em] text-ink">
-          What we are engaged to do
-        </h2>
-        <p className="max-w-[46ch] justify-self-start text-[15.5px] leading-[1.6] text-muted-2 md:justify-self-end">
-          Four practices, one engagement. Most clients begin with the platform and expand into the rest as the
-          foundation proves out.
-        </p>
-      </Reveal>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-12">
-        {CARDS.map((card, i) => {
-          const wide = card.span === "wide";
-          return (
-            <Reveal
-              key={card.title}
-              index={i}
-              className={`h-full ${wide ? "lg:col-span-7" : "lg:col-span-5"}`}
-            >
-              <article className="group relative h-full overflow-hidden rounded-xl border border-rule bg-surface px-[26px] pb-[30px] pt-7 transition-all duration-200 hover:-translate-y-1 hover:border-rule-hover hover:shadow-[0_16px_32px_-20px_rgba(20,41,63,0.35)]">
+        <Reveal className="mb-[clamp(32px,4vw,48px)] grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-end gap-6">
+          <h2 className="max-w-[16ch] font-serif text-[clamp(28px,3.6vw,46px)] font-normal leading-[1.1] tracking-[-0.02em] text-ink">
+            What we are engaged to do
+          </h2>
+          <p className="max-w-[46ch] justify-self-start text-[15.5px] leading-[1.6] text-muted-2 md:justify-self-end">
+            Three practices, one engagement. Start where the need is most urgent, and build the rest on the same
+            foundation.
+          </p>
+        </Reveal>
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+          {CARDS.map((card, i) => (
+            <Reveal key={card.title} index={i} className="h-full">
+              <article className={cardClass}>
                 <card.icon
-                  size={wide ? 136 : 108}
+                  size={128}
                   className="pointer-events-none absolute -bottom-6 -right-6 -rotate-6 text-ink opacity-[0.05] transition-opacity duration-200 group-hover:opacity-[0.09]"
                 />
-                <div
-                  className={`relative flex items-center justify-center rounded-lg border border-rule bg-surface-alt text-accent-deep transition-colors duration-200 group-hover:border-accent-deep group-hover:bg-accent-deep group-hover:text-white ${
-                    wide ? "h-12 w-12" : "h-11 w-11"
-                  }`}
-                >
+                <div className={iconTileClass}>
                   <card.icon />
                 </div>
-                <div className="relative mt-4 text-xs font-bold uppercase tracking-[0.1em] text-accent-deep">
-                  {card.kicker}
-                </div>
-                <h3
-                  className={`relative mb-2.5 mt-3.5 font-semibold tracking-[-0.01em] text-ink ${
-                    wide ? "text-2xl" : "text-xl"
-                  }`}
-                >
+                <div className={`relative mt-4 ${kickerClass}`}>{card.kicker}</div>
+                <h3 className="relative mb-2.5 mt-3.5 text-[22px] font-semibold tracking-[-0.01em] text-ink">
                   {card.title}
                 </h3>
-                <p className="relative mb-[18px] max-w-[46ch] text-[14.5px] leading-[1.6] text-muted-2">{card.body}</p>
+                <p className="relative mb-[18px] text-[14.5px] leading-[1.6] text-muted-2">{card.body}</p>
                 <ul className="relative grid gap-2 text-sm text-list">
                   {card.items.map((item) => (
                     <li key={item} className="flex gap-2.5">
@@ -107,9 +88,32 @@ export function Capabilities() {
                 </ul>
               </article>
             </Reveal>
-          );
-        })}
-      </div>
+          ))}
+        </div>
+        <Reveal className="mt-5">
+          <article className={`${cardClass} flex flex-wrap items-center gap-x-10 gap-y-5`}>
+            <div className={iconTileClass}>
+              <AdvisoryIcon />
+            </div>
+            <div className="relative min-w-[260px] flex-1">
+              <div className={kickerClass}>Advisory</div>
+              <h3 className="mb-1.5 mt-2 text-[22px] font-semibold tracking-[-0.01em] text-ink">
+                Fractional technology leadership
+              </h3>
+              <p className="max-w-[52ch] text-[14.5px] leading-[1.6] text-muted-2">
+                Senior judgment on retainer, without carrying a full-time executive.
+              </p>
+            </div>
+            <ul className="relative grid gap-2 text-sm text-list">
+              {ADVISORY_ITEMS.map((item) => (
+                <li key={item} className="flex gap-2.5">
+                  <span className="text-accent">—</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </article>
+        </Reveal>
       </div>
     </section>
   );

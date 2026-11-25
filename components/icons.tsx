@@ -37,11 +37,12 @@ export function ScienceIcon({ size = 22, className }: IconProps) {
   );
 }
 
-export function ReliabilityIcon({ size = 22, className }: IconProps) {
+export function CodeIcon({ size = 22, className }: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" className={className} {...base}>
-      <path d="M12 3.5l6.5 2.6v5.1c0 4.2-2.7 7.1-6.5 8.3-3.8-1.2-6.5-4.1-6.5-8.3V6.1L12 3.5Z" />
-      <path d="M9 12.3l2.1 2.1 4-4.3" />
+      <path d="M8.5 7.5L4 12l4.5 4.5" />
+      <path d="M15.5 7.5L20 12l-4.5 4.5" />
+      <path d="M13.5 5l-3 14" />
     </svg>
   );
 }

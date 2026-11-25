@@ -1,6 +1,6 @@
 import { Logo } from "./Logo";
 
-const PRACTICE_LINKS = ["Platform", "Data science & AI", "Reliability", "Advisory"];
+const PRACTICE_LINKS = ["Data foundation", "AI & automation", "Systems, web & cloud", "Advisory"];
 
 const SITE_LINKS = [
   { label: "Capabilities", href: "#capabilities" },
@@ -22,7 +22,7 @@ export function Footer() {
               <Logo variant="emblem" height={180} />
             </a>
             <p className="mt-3.5 text-[13.5px] leading-[1.6] text-muted-2">
-              Data architecture, analytics, and applied AI for organizations that need to trust their own numbers.
+              Data, AI, software, and cloud for businesses that need technology they can rely on.
             </p>
           </div>
           <div>
@@ -65,7 +65,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-between gap-3.5 border-t border-rule-soft pt-6 text-[13px] text-muted-3">
-          <span>© 2026 Core Techitect LLC · Data architecture &amp; analytics</span>
+          <span>© 2026 Core Techitect LLC · Data · AI · Software</span>
           <div className="flex flex-wrap items-center gap-5">
             <a href="/privacy" className="transition-colors duration-150 hover:text-accent-deep">
               Privacy

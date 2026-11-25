@@ -14,18 +14,18 @@ export function Hero() {
               className="flex items-center gap-2.5 text-[12.5px] font-semibold uppercase tracking-[0.11em] text-accent-deep"
             >
               <span className="block h-0.5 w-6 bg-accent" />
-              Data architecture · Analytics · Applied AI
+              Data · AI · Software
             </Reveal>
             <Reveal index={1}>
               <h1 className="max-w-[17ch] text-balance font-serif text-[clamp(38px,5.6vw,74px)] font-normal leading-[1.06] tracking-[-0.02em] text-ink">
-                One platform. Every number your company trusts.
+                Technology your business can build on.
               </h1>
             </Reveal>
             <Reveal index={2}>
               <p className="max-w-[60ch] text-[clamp(16.5px,1.3vw,19px)] leading-[1.6] text-muted">
-                Core Techitect designs and builds modern data warehouses for organizations that have outgrown
-                spreadsheets, dashboards no one trusts, and pipelines held together by one person&apos;s memory.
-                Architecture first — then analytics and AI that hold up under scrutiny, not just in a demo.
+                Core Techitect designs and builds the systems growing businesses run on: data foundations and
+                migrations, AI and automation, custom software, websites, and cloud. Architecture first, so what we
+                build keeps working as you grow.
               </p>
             </Reveal>
             <Reveal index={3} className="mt-1 flex flex-wrap gap-3">

@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <LegalPage eyebrow="Legal" title="Privacy Policy" lede="Last updated November 23, 2026">
+    <LegalPage eyebrow="Legal" title="Privacy Policy" lede="Last updated November 25, 2026">
       <p>
-        Core Techitect, LLC (“Core Techitect,” “we,” “us”) runs coretechitect.com to describe our data architecture,
-        analytics, and applied AI consulting and to hear from prospective clients. This policy explains what
+        Core Techitect, LLC (“Core Techitect,” “we,” “us”) runs coretechitect.com to describe our data, AI, software,
+        and cloud services and to hear from prospective clients. This policy explains what
         information the site collects and what we do with it.
       </p>
 
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
 
       <h2>How we use it</h2>
       <ul>
-        <li>To reply to your inquiry and schedule a conversation about your data estate.</li>
+        <li>To reply to your inquiry and schedule a conversation about your project.</li>
         <li>To send the account notifications you agreed to receive by text, using your mobile number only for that.</li>
         <li>To operate, secure, and troubleshoot the site, including detecting abuse and spam.</li>
         <li>

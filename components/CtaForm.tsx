@@ -83,7 +83,7 @@ export function CtaForm() {
         id="message"
         name="message"
         rows={3}
-        placeholder="A sentence or two on your data estate."
+        placeholder="What do you want to build or fix?"
         disabled={busy}
         className={`resize-none py-3 ${fieldClass}`}
       />

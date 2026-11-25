@@ -12,7 +12,7 @@ export function CtaSection() {
               Start with the audit.
             </h2>
             <p className="max-w-[48ch] text-base leading-[1.6] text-on-dark-body">
-              A 45-minute conversation and a written assessment of your data estate. No obligation to build with
+              A 45-minute conversation and a written assessment of your systems and data. No obligation to build with
               us afterward.
             </p>
           </div>

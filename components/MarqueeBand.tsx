@@ -1,14 +1,14 @@
 // Decorative, infinitely-scrolling restatement of terms already covered in
 // Capabilities — purely visual texture, so the whole thing is aria-hidden.
 const TERMS = [
-  "Governance",
-  "Lineage",
-  "Forecasting",
-  "Reconciliation",
-  "Monitoring",
-  "Advisory",
-  "Modeling",
-  "Alerting",
+  "Migration",
+  "Data foundation",
+  "AI agents",
+  "Automation",
+  "System design",
+  "Web",
+  "Cloud",
+  "Integrations",
 ];
 
 function TermGroup() {
