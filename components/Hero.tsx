@@ -1,4 +1,4 @@
-import { HeroGraphic } from "./HeroGraphic";
+import { Logo } from "./Logo";
 import { Reveal } from "./Reveal";
 
 export function Hero() {
@@ -17,7 +17,7 @@ export function Hero() {
               Data architecture · Analytics · Applied AI
             </Reveal>
             <Reveal index={1}>
-              <h1 className="max-w-[17ch] text-balance font-serif text-[clamp(38px,5.6vw,74px)] font-normal leading-[1.06] tracking-[-0.02em] text-navy">
+              <h1 className="max-w-[17ch] text-balance font-serif text-[clamp(38px,5.6vw,74px)] font-normal leading-[1.06] tracking-[-0.02em] text-ink">
                 One platform. Every number your company trusts.
               </h1>
             </Reveal>
@@ -31,20 +31,20 @@ export function Hero() {
             <Reveal index={3} className="mt-1 flex flex-wrap gap-3">
               <a
                 href="#contact"
-                className="inline-flex h-[50px] items-center rounded-md bg-navy px-[26px] text-[15.5px] font-semibold text-bg transition-colors duration-150 hover:bg-navy-hover"
+                className="inline-flex h-[50px] items-center rounded-md bg-accent px-[26px] text-[15.5px] font-semibold text-bg transition-colors duration-150 hover:bg-accent-hover"
               >
                 Book a consultation
               </a>
               <a
                 href="#capabilities"
-                className="inline-flex h-[50px] items-center rounded-md border border-rule-strong px-6 text-[15.5px] font-semibold text-ink transition-colors duration-150 hover:border-navy"
+                className="inline-flex h-[50px] items-center rounded-md border border-rule-strong px-6 text-[15.5px] font-semibold text-ink transition-colors duration-150 hover:border-accent"
               >
                 See what we build
               </a>
             </Reveal>
           </div>
           <div className="hidden justify-self-center lg:block lg:w-[380px] xl:justify-self-end">
-            <HeroGraphic />
+            <Logo variant="emblem" height={380} />
           </div>
         </div>
       </div>

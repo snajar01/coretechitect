@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 export function CtaSection() {
   return (
-    <section id="contact" className="cta-glow relative overflow-hidden bg-navy text-cta-fg">
+    <section id="contact" className="cta-glow relative overflow-hidden bg-surface text-cta-fg">
       <div className="accent-shape accent-shape-1" style={{ opacity: 0.5 }} />
       <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(52px,7vw,96px)] relative z-10">
         <Reveal className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-end gap-[clamp(28px,4vw,64px)]">

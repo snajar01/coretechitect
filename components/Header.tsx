@@ -46,7 +46,7 @@ export function Header() {
           </div>
           <a
             href="#contact"
-            className="inline-flex h-10 items-center rounded-md bg-navy px-5 text-[14.5px] font-semibold text-bg transition-colors duration-150 hover:bg-navy-hover"
+            className="inline-flex h-10 items-center rounded-md bg-accent px-5 text-[14.5px] font-semibold text-bg transition-colors duration-150 hover:bg-accent-hover"
           >
             Book a consultation
           </a>

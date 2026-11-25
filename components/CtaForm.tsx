@@ -44,7 +44,7 @@ export function CtaForm() {
         : "We reply within one business day.";
 
   const fieldClass =
-    "rounded-md border border-navy-line bg-navy-deep px-4 font-sans text-[15px] text-cta-fg placeholder:text-on-dark-hint focus:border-accent focus:outline-none disabled:opacity-70";
+    "rounded-md border border-rule-hover bg-bg px-4 font-sans text-[15px] text-cta-fg placeholder:text-on-dark-hint focus:border-accent focus:outline-none disabled:opacity-70";
   const labelClass = "text-[13px] text-on-dark-body";
 
   return (
@@ -91,7 +91,7 @@ export function CtaForm() {
         <button
           type="submit"
           disabled={busy}
-          className="h-[50px] rounded-md bg-accent px-[26px] font-sans text-[15.5px] font-semibold text-white transition-colors duration-150 hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-70"
+          className="h-[50px] rounded-md bg-accent px-[26px] font-sans text-[15.5px] font-semibold text-bg transition-colors duration-150 hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-70"
         >
           {status === "submitting" ? "Sending…" : "Request the audit"}
         </button>

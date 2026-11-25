@@ -37,7 +37,7 @@ export function HeroGraphic() {
         <path
           key={`sl-${i}`}
           d={`M ${s.x} ${s.y} Q ${HUB_IN.x} ${s.y} ${HUB_IN.x} ${HUB_IN.y}`}
-          className="hg-line stroke-navy-line"
+          className="hg-line stroke-muted-3"
           strokeWidth={1.5}
           style={delayStyle(s.delay)}
         />
@@ -61,7 +61,7 @@ export function HeroGraphic() {
           width={70}
           height={16}
           rx={4}
-          className="hg-node fill-navy"
+          className="hg-node fill-accent"
           style={delayStyle(l.delay)}
         />
       ))}
@@ -86,10 +86,10 @@ export function HeroGraphic() {
       </g>
 
       <g className="hg-pulse" style={delayStyle(OUTPUTS[1].delay + 750)}>
-        <circle cx={OUTPUTS[1].x} cy={OUTPUTS[1].y} r={17} className="fill-surface stroke-navy" strokeWidth={1.5} />
+        <circle cx={OUTPUTS[1].x} cy={OUTPUTS[1].y} r={17} className="fill-surface stroke-ink" strokeWidth={1.5} />
         <path
           d={`M ${OUTPUTS[1].x - 7} ${OUTPUTS[1].y} l 5 5 l 9 -10`}
-          className="stroke-navy"
+          className="stroke-ink"
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"

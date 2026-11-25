@@ -19,7 +19,7 @@ export function Outcomes() {
           <div className="mb-5 text-[12.5px] font-bold uppercase tracking-[0.11em] text-accent-deep">
             In practice
           </div>
-          <p className="text-pretty font-serif text-[clamp(21px,2.2vw,29px)] leading-[1.34] text-navy">
+          <p className="text-pretty font-serif text-[clamp(21px,2.2vw,29px)] leading-[1.34] text-ink">
             “We stopped guessing. Six weeks in, the leadership team was reading the same numbers off the same
             system for the first time since we founded the company.”
           </p>
@@ -34,7 +34,7 @@ export function Outcomes() {
               }`}
             >
               <span className="text-[14.5px] text-muted-2">{stat.label}</span>
-              <span className="whitespace-nowrap font-serif text-[22px] text-navy">{stat.value}</span>
+              <span className="whitespace-nowrap font-serif text-[22px] text-ink">{stat.value}</span>
             </div>
           ))}
         </div>

@@ -68,16 +68,16 @@ export function SmsOptInForm() {
           checked={consent}
           onChange={(event) => setConsent(event.target.checked)}
           disabled={busy}
-          className="mt-1.5 h-[18px] w-[18px] flex-none accent-navy"
+          className="mt-1.5 h-[18px] w-[18px] flex-none accent-accent"
         />
         <label htmlFor="consent" className="text-[13.5px] leading-[1.6] text-list">
           By checking this box, you agree to receive recurring automated account notifications from Core Techitect at
           the number provided. Consent is not a condition of purchase. Msg frequency varies. Msg &amp; data rates may
           apply. Reply HELP for help, STOP to cancel.{" "}
-          <a href="/privacy" className="text-[#7d9bff] underline">
+          <a href="/privacy" className="text-accent underline">
             Privacy Policy
           </a>{" "}
-          <a href="/terms" className="text-[#7d9bff] underline">
+          <a href="/terms" className="text-accent underline">
             Terms
           </a>
         </label>
@@ -86,7 +86,7 @@ export function SmsOptInForm() {
         <button
           type="submit"
           disabled={!consent || busy}
-          className="h-[46px] rounded-md bg-navy px-[22px] font-sans text-[15px] font-semibold text-white transition-colors duration-150 hover:bg-navy-hover disabled:cursor-not-allowed disabled:opacity-45"
+          className="h-[46px] rounded-md bg-accent px-[22px] font-sans text-[15px] font-semibold text-bg transition-colors duration-150 hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-45"
         >
           {busy ? "Sending..." : "Enable text alerts"}
         </button>

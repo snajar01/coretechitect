@@ -16,7 +16,7 @@ function TermGroup() {
     <span className="flex shrink-0 items-center">
       {TERMS.map((term) => (
         <span key={term} className="flex items-center">
-          <span className="px-6 font-serif text-[24px] text-navy sm:px-8 sm:text-[30px]">{term}</span>
+          <span className="px-6 font-serif text-[24px] text-ink sm:px-8 sm:text-[30px]">{term}</span>
           <span className="text-accent">•</span>
         </span>
       ))}

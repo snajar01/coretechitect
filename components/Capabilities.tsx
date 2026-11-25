@@ -57,7 +57,7 @@ export function Capabilities() {
       <div className="accent-shape accent-shape-3" />
       <div className="mx-auto max-w-[1200px] px-[clamp(20px,4vw,48px)] py-[clamp(48px,6vw,80px)]">
       <Reveal className="mb-[clamp(32px,4vw,48px)] grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-end gap-6">
-        <h2 className="max-w-[16ch] font-serif text-[clamp(28px,3.6vw,46px)] font-normal leading-[1.1] tracking-[-0.02em] text-navy">
+        <h2 className="max-w-[16ch] font-serif text-[clamp(28px,3.6vw,46px)] font-normal leading-[1.1] tracking-[-0.02em] text-ink">
           What we are engaged to do
         </h2>
         <p className="max-w-[46ch] justify-self-start text-[15.5px] leading-[1.6] text-muted-2 md:justify-self-end">
@@ -77,7 +77,7 @@ export function Capabilities() {
               <article className="group relative h-full overflow-hidden rounded-xl border border-rule bg-surface px-[26px] pb-[30px] pt-7 transition-all duration-200 hover:-translate-y-1 hover:border-rule-hover hover:shadow-[0_16px_32px_-20px_rgba(20,41,63,0.35)]">
                 <card.icon
                   size={wide ? 136 : 108}
-                  className="pointer-events-none absolute -bottom-6 -right-6 -rotate-6 text-navy opacity-[0.05] transition-opacity duration-200 group-hover:opacity-[0.09]"
+                  className="pointer-events-none absolute -bottom-6 -right-6 -rotate-6 text-ink opacity-[0.05] transition-opacity duration-200 group-hover:opacity-[0.09]"
                 />
                 <div
                   className={`relative flex items-center justify-center rounded-lg border border-rule bg-surface-alt text-accent-deep transition-colors duration-200 group-hover:border-accent-deep group-hover:bg-accent-deep group-hover:text-white ${
@@ -90,7 +90,7 @@ export function Capabilities() {
                   {card.kicker}
                 </div>
                 <h3
-                  className={`relative mb-2.5 mt-3.5 font-semibold tracking-[-0.01em] text-navy ${
+                  className={`relative mb-2.5 mt-3.5 font-semibold tracking-[-0.01em] text-ink ${
                     wide ? "text-2xl" : "text-xl"
                   }`}
                 >

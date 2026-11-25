@@ -19,7 +19,7 @@ export function Footer() {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-x-8 gap-y-10 pb-10">
           <div className="max-w-[280px]">
             <a href="#top" aria-label="Core Techitect, back to top" className="inline-block">
-              <Logo variant="lockup" height={56} />
+              <Logo variant="emblem" height={180} />
             </a>
             <p className="mt-3.5 text-[13.5px] leading-[1.6] text-muted-2">
               Data architecture, analytics, and applied AI for organizations that need to trust their own numbers.
@@ -57,7 +57,7 @@ export function Footer() {
               </a>
               <a
                 href="#contact"
-                className="inline-flex h-9 w-fit items-center rounded-md bg-navy px-4 text-[13px] font-semibold text-bg transition-colors duration-150 hover:bg-navy-hover"
+                className="inline-flex h-9 w-fit items-center rounded-md bg-accent px-4 text-[13px] font-semibold text-bg transition-colors duration-150 hover:bg-accent-hover"
               >
                 Book a consultation
               </a>

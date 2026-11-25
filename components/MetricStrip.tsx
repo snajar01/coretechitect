@@ -21,7 +21,7 @@ export function MetricStrip() {
               i === 0 ? "pr-6" : i === METRICS.length - 1 ? "pl-6" : "px-6"
             }`}
           >
-            <div className="font-serif text-[38px] leading-none text-navy">
+            <div className="font-serif text-[38px] leading-none text-accent">
               <CountUp value={metric.value} />
             </div>
             <div className="mt-2 text-sm leading-[1.5] text-muted-2">{metric.caption}</div>
